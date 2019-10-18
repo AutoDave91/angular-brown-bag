@@ -9,8 +9,15 @@ export class AppComponent {
   title: string = 'my-first-angular';
   name: string = 'David';
   input: string = '';
+  date: Date = new Date();
 
-  handleChange(e){
-    this.input = e.target.value
+  // handleChange(e){
+  //   this.input = e.target.value;
+  // }
+  // (keyup)="handleChange($event)" value="{{input}}"
+  
+  handleClick(){
+    this.name = this.input;
+    this.input = '';
   }
 }
