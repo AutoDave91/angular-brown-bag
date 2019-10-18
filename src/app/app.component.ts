@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'my-first-angular';
+  title: string = 'my-first-angular';
+  name: string = 'David';
+  input: string = '';
+
+  handleChange(e){
+    this.input = e.target.value
+  }
 }
